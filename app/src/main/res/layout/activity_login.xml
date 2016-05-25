@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_bg"
+    tools:context="com.bcx.managersystem.activity.LoginActivity">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="管理系统"
+        android:background="#00000000"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_account2"
+        style="@style/Login_Style_linearlayout"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="50dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/qihoo_accounts_user_lable" />
+
+        <TextView
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  |  " />
+
+        <EditText
+            android:id="@+id/log_name"
+            style="@style/accountEditText"
+            android:hint="@string/et_login_username_hint" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_password"
+        style="@style/accountInputBorder"
+        android:layout_below="@id/ll_account2"
+        android:layout_marginTop="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/qihoo_accounts_pass_lable" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="  |  " />
+
+        <EditText
+            android:id="@+id/log_pwd"
+            style="@style/accountEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:hint="@string/et_login_password_hint"
+         />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/check_layout"
+        android:layout_below="@id/ll_password"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#00000000"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/ac_login_cd_rember"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:text="@string/cb_login_remember_password"/>
+        <CheckBox
+            android:id="@+id/ac_login_cd_auto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:text="@string/cb_login_auto_login"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_layout"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp" >
+
+        <Button
+            android:id="@+id/ac_login_bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="loading"
+            android:background="@drawable/qihoo_accounts_login"
+            android:text="立即登陆"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+          />
+
+    </LinearLayout>
+
+</RelativeLayout>

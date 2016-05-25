@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_10dp_"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/list_frag_myself_tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_20dp_"
+        android:text="头像"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#fff" />
+
+    <ImageView
+        android:id="@+id/list_frag_me_msg_headview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_20dp_"
+        android:layout_marginBottom="5dp"
+        android:background="#fff"
+        android:visibility="invisible"
+        android:src="@drawable/jiantou" />
+
+    <TextView
+        android:id="@+id/list_frag_myself_tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_20dp_"
+        android:background="#fff"
+        android:gravity="right|center"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        android:hint="xxxxxx"
+         />
+
+</RelativeLayout>

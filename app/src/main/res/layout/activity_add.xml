@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige">
+
+        <Button
+            android:id="@+id/add_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qihoo_accounts_login"
+            android:onClick="go"
+            android:text="返回" />
+
+        <EditText
+            android:id="@+id/add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/beige"
+            android:ellipsize="middle"
+            android:paddingLeft="5dp"
+            android:ems="10"
+            android:hint="请输入标题"
+            android:lines="1"
+            android:singleLine="true">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/add_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qihoo_accounts_login"
+            android:onClick="go"
+            android:text="完成" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/beige"
+            android:text="设置提醒日期:" />
+
+        <TextView
+            android:id="@+id/add_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/beige"
+            android:clickable="true"
+            android:hint="Date"
+            android:onClick="setDate"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/beige"
+            android:text="Time:" />
+
+        <TextView
+            android:id="@+id/add_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/beige"
+            android:clickable="true"
+            android:hint="Time"
+            android:onClick="setDate"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/add_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="请输入内容"
+        android:textColorHint="#55ff0099" />
+
+</LinearLayout>

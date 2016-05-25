@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bcx.managersystem.fragment.Myself_frag_setting">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/frag_me_msg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/frag_me_ringtone_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:background="@color/black"
+            android:clickable="true"
+            android:src="@drawable/ic_me_msg_back" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/frag_me_msg_tv_title"
+            style="@style/frag_me_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_frag_me_msg_setting_ringtone" />
+        <Button
+            android:id="@+id/bt_frag_me_ringtone_save"
+            android:layout_marginLeft="100dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/qihoo_accounts_login"
+            android:visibility="visible"
+            android:text="@string/str_frag_me_msg_setting_save"/>
+
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/frag_me_ringtone_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_bottom_line_20"
+        android:dividerHeight="0.5dp"
+        ></ListView>
+
+
+</LinearLayout>

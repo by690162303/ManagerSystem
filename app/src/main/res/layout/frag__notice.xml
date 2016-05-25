@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/frag_txt_label"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/beige"
+        android:gravity="center"
+        android:text="公告"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.bcx.managersystem.util.Refresh.CanRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_txt_label">
+
+        <ListView
+            android:id="@id/can_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+
+        <com.bcx.managersystem.util.Refresh.classic.ClassicRefreshView
+            android:id="@id/can_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.bcx.managersystem.util.Refresh.classic.ClassicRefreshView
+            android:id="@id/can_refresh_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.bcx.managersystem.util.Refresh.CanRefreshLayout>
+
+</RelativeLayout>

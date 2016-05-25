@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/frag_class_tv_num"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/beige"
+                android:gravity="left"
+                android:text="第几周"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold"  />
+
+            <TextView
+                android:id="@+id/frag_class_tv_zhounum"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/beige"
+                android:gravity="left"
+                android:text="星期几"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/frag_class_tv_data"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/beige"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="日期时间"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <com.bcx.managersystem.view.MyTextView
+                android:id="@+id/frag_class_tv_weather"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/beige"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="天气预报"
+                android:textColor="@color/green"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige"
+        app:tabIndicatorColor="#007ae1"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="10dp"
+
+        app:tabBackground="@color/beige"
+        app:tabSelectedTextColor="#007ae1"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Subhead"
+        app:tabTextColor="#666666" /><!--app:tabIndicatorColor="@color/white"                 // 下方滚动的下划线颜色--><!--app:tabSelectedTextColor="@color/gray"               // tab被选中后，文字的颜色--><!--app:tabTextColor="@color/white"                      // tab默认的文字颜色-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/frag_class_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

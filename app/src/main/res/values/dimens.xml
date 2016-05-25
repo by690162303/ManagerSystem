@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- LoginActivity -->
+    <dimen name="layer_padding">3dp</dimen>
+    <!-- Frag_myself -->
+    <dimen name="frag_list_line_me">50dp</dimen>
+    <dimen name="frag_list_line_me_set">50dp</dimen>
+    <dimen name="dimen_10dp_">10dp</dimen>
+    <dimen name="dimen_15dp_">15dp</dimen>
+    <dimen name="dimen_20dp_">20dp</dimen>
+    <dimen name="dimen_30dp_">30dp</dimen>
+</resources>

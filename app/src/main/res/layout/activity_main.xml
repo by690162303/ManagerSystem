@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ac_main_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/ac_main_rb_class"
+            style="@style/ac_mian_bottom_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_main_class"
+            android:text="课程" />
+
+        <RadioButton
+            android:id="@+id/ac_main_rb_msg"
+            style="@style/ac_mian_bottom_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_main_msg"
+            android:text="公告" />
+
+        <RadioButton
+            android:id="@+id/ac_main_rb_txt"
+            style="@style/ac_mian_bottom_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_main_txt"
+            android:text="备忘录" />
+
+        <RadioButton
+            android:id="@+id/ac_main_rb_me"
+            style="@style/ac_mian_bottom_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_main_me"
+            android:text="我" />
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_above="@+id/ac_main_bottom_layout"
+        ></View>
+    <com.bcx.managersystem.view.CustomViewPager
+        android:id="@+id/ac_main_contant_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line1"
+        android:background="@drawable/ic_label_green"></com.bcx.managersystem.view.CustomViewPager>
+</RelativeLayout>

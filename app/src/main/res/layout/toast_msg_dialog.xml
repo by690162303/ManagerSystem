@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/dialog_notice_title"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.7"
+    android:gravity="center"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:text="标题"
+    />
+    <TextView
+        android:id="@+id/dialog_notice_tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffc0bb"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/dimen_15dp_"
+        android:gravity="right|center_vertical"
+        android:textSize="14sp"
+        android:text="作者：笑嘻嘻  时间：2015-5-20 15：35"
+        />
+    <TextView
+        android:id="@+id/dialog_notice_contant"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:layout_weight="12"
+        android:gravity="left"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:text=" 主要内容"
+        />
+</LinearLayout>
